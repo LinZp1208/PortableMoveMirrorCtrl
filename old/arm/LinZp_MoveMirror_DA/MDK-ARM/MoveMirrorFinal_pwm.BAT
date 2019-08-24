@@ -1,0 +1,31 @@
+SET PATH=C:\Keil_v5\ARM\ARMCC\Bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;F:\OpenCV\opencv\build\x64\vc14\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\OpenCV300\opencv\build\x86\vc11\bin;F:\Python\Scripts\;F:\Python\;C:\Cadence\SPB_16.6\openaccess\bin\win32\opt;C:\Cadence\SPB_16.6\tools\capture;C:\Cadence\SPB_16.6\tools\pspice;C:\Cadence\SPB_16.6\tools\specctra\bin;C:\Cadence\SPB_16.6\tools\fet\bin;C:\Cadence\SPB_16.6\tools\libutil\bin;C:\Cadence\SPB_16.6\tools\bin;C:\Cadence\SPB_16.6\tools\pcb\bin;C:\Users\iWork-Lin\AppData\Local\Microsoft\WindowsApps;F:\OpenCV\opencv\build\x64\vc14\bin
+SET CPU_TYPE=STM32F407ZGTx
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=MoveMirrorFinal_pwm
+SET CPU_CLOCK=0x0A037A00
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via "movemirrorfinal_pwm\startup_stm32f407xx._ia"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_pwr.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_dma_ex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_flash_ramfunc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_tim_ex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_flash_ex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_cortex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_dma.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_rcc_ex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_flash.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_pwr_ex.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_tim.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_rcc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_gpio.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_sram.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_ll_fsmc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_uart.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\system_stm32f4xx.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_it.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\main.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\stm32f4xx_hal_msp.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\sys.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "movemirrorfinal_pwm\pid.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via "MoveMirrorFinal_pwm\MoveMirrorFinal_pwm.lnp"
+"C:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" "MoveMirrorFinal_pwm\MoveMirrorFinal_pwm.axf" --i32combined --output "MoveMirrorFinal_pwm\MoveMirrorFinal_pwm.hex"

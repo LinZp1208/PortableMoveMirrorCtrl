@@ -1,0 +1,27 @@
+module CaptureT(
+						input clk,
+						input reset_n,
+						input SamplePlusIn1,
+						output reg[31:0]T1,
+						output INT
+					);
+assign INT = SamplePlusIn1;
+
+reg[31:0]Cap1,Cap2;
+reg[31:0]NUM;
+always@(posedge clk)
+begin
+	NUM<=NUM+32'd1;
+end
+
+always@(posedge SamplePlusIn1)
+begin
+	Cap1<=Cap2;
+	Cap2<=NUM;
+	
+	T1<=Cap2-Cap1;
+
+end	
+		
+endmodule
+					

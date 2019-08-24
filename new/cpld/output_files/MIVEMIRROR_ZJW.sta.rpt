@@ -1,0 +1,339 @@
+TimeQuest Timing Analyzer report for MIVEMIRROR_ZJW
+Sat Jul 20 12:56:10 2019
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Fmax Summary
+  7. Setup Summary
+  8. Hold Summary
+  9. Recovery Summary
+ 10. Removal Summary
+ 11. Minimum Pulse Width Summary
+ 12. Clock Transfers
+ 13. Report TCCS
+ 14. Report RSKM
+ 15. Unconstrained Paths Summary
+ 16. Clock Status Summary
+ 17. Unconstrained Input Ports
+ 18. Unconstrained Output Ports
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                               ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Timing Analyzer       ; TimeQuest                                               ;
+; Revision Name         ; MIVEMIRROR_ZJW                                          ;
+; Device Family         ; MAX II                                                  ;
+; Device Name           ; EPM1270T144C5                                           ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Slow Model                                              ;
+; Rise/Fall Delays      ; Unavailable                                             ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------+
+; SDC File List                                             ;
++-----------------------+--------+--------------------------+
+; SDC File Path         ; Status ; Read at                  ;
++-----------------------+--------+--------------------------+
+; output_files/SDC1.sdc ; OK     ; Sat Jul 20 12:56:10 2019 ;
++-----------------------+--------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+---------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type    ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+---------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; SYS_CLK    ; Virtual ; 37.037 ; 27.0 MHz  ; 0.000 ; 18.518 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { }     ;
++------------+---------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Input Ports       ; 16    ; 16   ;
+; Unconstrained Input Port Paths  ; 62    ; 62   ;
+; Unconstrained Output Ports      ; 30    ; 30   ;
+; Unconstrained Output Port Paths ; 94    ; 94   ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------+
+; Clock Status Summary                       ;
++--------+---------+---------+---------------+
+; Target ; Clock   ; Type    ; Status        ;
++--------+---------+---------+---------------+
+;        ; SYS_CLK ; Virtual ; Constrained   ;
+; clk    ;         ; Base    ; Unconstrained ;
++--------+---------+---------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                                    ;
++-----------------------+--------------------------------------------------------------------------------------+
+; Input Port            ; Comment                                                                              ;
++-----------------------+--------------------------------------------------------------------------------------+
+; ARM_GPIO_PB8          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC6          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC7          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC8          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Address[0]            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Address[1]            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PB9              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PG7              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; FSMC_NE1              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_IDLE_CTRL       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_LIGHT_IDLE_CTRL ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SAMPLE_IN             ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SDO                   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_MOSI             ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_SCK              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ZeroOffset            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                ;
++-------------------+---------------------------------------------------------------------------------------+
+; Output Port       ; Comment                                                                               ;
++-------------------+---------------------------------------------------------------------------------------+
+; ARM_ZeroOffset    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Arm_Light_Idle    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Arm_Motor_Idle    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CLR               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PG8          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DirOUT            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LDAC              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_PULSE_VALID ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; RESET             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SCLK              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SDIN              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_MISO         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SYNC              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SamplePulseOut    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[7]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[8]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[9]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[10]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[11]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[12]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[13]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[14]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[15]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                                    ;
++-----------------------+--------------------------------------------------------------------------------------+
+; Input Port            ; Comment                                                                              ;
++-----------------------+--------------------------------------------------------------------------------------+
+; ARM_GPIO_PB8          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC6          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC7          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ARM_GPIO_PC8          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Address[0]            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Address[1]            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PB9              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PG7              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; FSMC_NE1              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_IDLE_CTRL       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_LIGHT_IDLE_CTRL ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SAMPLE_IN             ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SDO                   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_MOSI             ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_SCK              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ZeroOffset            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                ;
++-------------------+---------------------------------------------------------------------------------------+
+; Output Port       ; Comment                                                                               ;
++-------------------+---------------------------------------------------------------------------------------+
+; ARM_ZeroOffset    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Arm_Light_Idle    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Arm_Motor_Idle    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CLR               ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; CPLD_PG8          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DirOUT            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LDAC              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; MOTOR_PULSE_VALID ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; RESET             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SCLK              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SDIN              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SPI1_MISO         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SYNC              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SamplePulseOut    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[7]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[8]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[9]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[10]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[11]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[12]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[13]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[14]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; readdata[15]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Processing started: Sat Jul 20 12:56:09 2019
+Info: Command: quartus_sta MIVEMIRROR_ZJW -c MIVEMIRROR_ZJW
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332104): Reading SDC File: 'output_files/SDC1.sdc'
+Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CaptureT:CaptureT_inst|e is being clocked by clk
+Warning (332061): Virtual clock SYS_CLK is never referenced in any input or output delay assignment.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332140): No fmax paths to report
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4691 megabytes
+    Info: Processing ended: Sat Jul 20 12:56:10 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

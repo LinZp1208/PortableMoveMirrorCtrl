@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Jul 20 12:56:07 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : MIVEMIRROR_ZJW
+Top-level Entity Name : MIVEMIRROR_ZJW
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 150 / 1,270 ( 12 % )
+Total pins : 56 / 116 ( 48 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
